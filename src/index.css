@@ -6,17 +6,30 @@
 @layer base {
   :root {
     --color-primary-900: #417f56;
+    --color-primary-800:#548B66;
+    --color-primary-700:#679877;
+    --color-primary-600:#7AA588;
+    --color-primary-500:#8DB299;
+    --color-primary-400:#A0BFAA;
+    --color-primary-300:#B3CBBB;
+    --color-primary-200:#C6D8CC;
+    --color-primary-100:#D9E5DD;
+    --color-primary-50:#ECF2EE;
+    --color-gray:#EDEDED;
     --color-white: #ffff;
     --color-black: #353535;
   }
 }
 
 @layer components {
+  .horizontal__container{
+    @apply flex flex-nowrap overflow-x-scroll;
+  }
   .textField__input {
     @apply w-full py-1 px-4 rounded-xl  border  transition-all duration-300 ease-out focus:shadow-lg ;
   }
   .btn {
-    @apply px-3 py-1 font-bold rounded-lg transition-all duration-300;
+    @apply px-4 py-2 text-sm md:text-base  rounded-lg transition-all duration-300;
   }
   .btn--primary {
     @apply text-primary-900 border border-primary-900 hover:bg-primary-900 hover:text-white shadow-lg ;
@@ -54,10 +67,12 @@ html,
 body {
   font-family: "Vazir";
   padding: 0;
-  margin: 0;
+  /* margin: 0; */
   min-height: 100vh;
   user-select: none;
-  /* background-color: black; */
+  /* background-color: rgb(243, 233, 233); */
+  /* max-width: 1024px; */
+  margin: 0 auto;
 }
 
 * {
@@ -131,3 +146,4 @@ table td {
   /* background-color: rgb(var(--color-secondary-500)); */
   /* color: rgb(var(--color-secondary-800)); */
 }
+
