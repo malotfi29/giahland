@@ -1,7 +1,7 @@
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Product from "../ui/Product";
 
-function ScrollProducts({products,title}) {
+function ScrollProducts({products,title,className=""}) {
 
 const sliderLeft=()=>{
   var slider=document.getElementById("slider")
@@ -15,7 +15,7 @@ const sliderRight=()=>{
 
 
   return (
-    <div className="flex flex-col">
+    <div className={`flex flex-col ${className}`}>
       <h1 className="text-base lg:text-xl font-bold text-primary-900">{title}</h1>
     <div className=" flex relative items-center p-4">
       <MdChevronRight onClick={sliderRight} size={40} className="opacity-50 cursor-pointer hover:opacity-100" />

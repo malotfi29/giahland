@@ -3,380 +3,720 @@
     {
       "id": 1,
       "title": "گیاه طبیعی باباآدم",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "price": 850000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame11.png"
     },
     {
       "id": 2,
       "title": "گیاه طبیعی یوکا",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+     "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 570000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame12.png"
     },
     {
       "id": 3,
       "title": "گیاه طبیعی سانسوریا سبز",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 250000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame10.png"
     },
     {
       "id": 4,
       "title": "گیاه طبیعی ساکولنت",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 57000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame13.png"
     },
     {
       "id": 5,
       "title": "گیاه طبیعی بونسای",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 300000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame14.png"
     },
     {
       "id": 6,
       "title": "گیاه طبیعی سانسوریا",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 300000,
-      "category-id": 100,
+      "categoryId": 100,
       "imgUrl": "/images/Frame15.png"
     },
     {
       "id": 7,
       "title": "گیاه طبیعی پتوس",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 280000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame16.png"
     },
     {
       "id": 8,
       "title": "گیاه طبیعی پاچیرا",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 90000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame17.png"
     },
     {
       "id": 9,
       "title": "گیاه طبیعی کراسولا",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+     "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 150000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame18.png"
     },
     {
       "id": 10,
       "title": "گیاه طبیعی یشم",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 150000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame19.png"
     },
     {
       "id": 11,
       "title": "گیاه طبیعی بونسای پاچیرا",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 880000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame20.png"
     },
     {
       "id": 12,
       "title": "گیاه طبیعی  کراسولا خرفه ای",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+     "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 169000,
-      "category-id": 200,
+      "categoryId": 200,
       "imgUrl": "/images/Frame21.png"
     },
     {
       "id": 13,
       "title": "گیاه طبیعی رزماری ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 180000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame22.png"
     },
     {
       "id": 14,
       "title": "گیاه طبیعی آدنیوم ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 350000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame23.png"
     },
     {
       "id": 15,
       "title": "گیاه طبیعی آشیانتوس ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 150000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame24.png"
     },
     {
       "id": 16,
       "title": "گیاه طبیعی آناناسی ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 250000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame25.png"
     },
     {
       "id": 17,
       "title": "گیاه طبیعی بنت قنسول ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 400000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame26.png"
     },
     {
       "id": 18,
       "title": "گیاه طبیعی  آنتوریوم ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 170000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame27.png"
     },
     {
       "id": 19,
       "title": "گیاه طبیعی  بونسای پاچیرا ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+      "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 400000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame28.png"
     },
     {
       "id": 20,
       "title": "گیاه طبیعی  آنتوریوم ",
-      "properties": {
-        "vase-type": "پلاستیک",
-        "soil-type": "خاک گلدانی ،شنی و غنی",
-        "weghit": "4000",
-        "dimensions": {
-          "length": 25,
-          "widht": 25,
-          "height": 80
+     "properties": [
+        {
+          "id":1,
+          "title":"جنس گلدان",
+          "description":"پلاستیکی"
         },
-        "sunLove": "آفتاب دوست"
-      },
+        {
+          "id":2,
+          "title":"وزن",
+          "description":"4000گرم"
+        },
+        {
+          "id":3,
+          "title":"وضعیت نسبت به آفتاب",
+          "description":"آفتاب دوست"
+        },
+        {
+          "id":4,
+          "title":"خاک گیاه",
+          "description":"خاک گلدانی شنی و غنی"
+        },
+        {
+          "id":5,
+          "title":"ابعاد",
+          "description":"25*25*800"
+        }
+
+      ],
       "description": "",
       "price": 400000,
-      "category-id": 300,
+      "categoryId": 300,
       "imgUrl": "/images/Frame29.png"
     }
   ]

@@ -1,4 +1,4 @@
-import Product from "../features/Product"
+import Product from "../features/Product/Product"
 
 
 function SingleProduct() {

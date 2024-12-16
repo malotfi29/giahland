@@ -12,7 +12,7 @@ function Product({product}) {
         <span className="text-sm md:text-base">قیمت:</span>
         <span className="text-sm md:text-base">{toPersianNumbersWithComma(product.price)} تومان</span>
       </div>
-      <Link to={`/${product.id}`} className="flex items-center justify-center">
+      <Link to={`${product.id}`} className="flex items-center justify-center">
       <Button variant="secondary" className="w-full text-sm md:text-base" >مشاهده بیشتر</Button>
       </Link>
       

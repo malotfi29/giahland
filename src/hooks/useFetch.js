@@ -10,8 +10,7 @@ export default function useFetch(url, query = "") {
       try {
         setIsLoading(true);
         const { data } = await axios.get(`${url}`);
-        
-        
+
         setData(data);
       } catch (err) {
         setData([]);
@@ -22,5 +21,5 @@ export default function useFetch(url, query = "") {
     }
     fetchData();
   }, [url]);
-  return {isLoading, data};
+  return { isLoading, data };
 }
