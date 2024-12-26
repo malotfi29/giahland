@@ -5,9 +5,9 @@ const btnType = {
   transparent: "btn--transparent",
 };
 
-function Button({ children, variant = "primary", onClick,className }) {
+function Button({ children, variant = "primary", onClick,className,type }) {
   return (
-    <button onClick={onClick} className={`btn ${className} ${btnType[variant]}`}>
+    <button type={type} onClick={onClick} className={`btn ${className} ${btnType[variant]}`}>
       {children}
     </button>
   );

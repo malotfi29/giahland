@@ -1,22 +1,38 @@
 import Button from "./Button";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCartOutline, IoSearchSharp } from "react-icons/io5";
-import { IoIosLogIn } from "react-icons/io";
-import { useState } from "react";
+import { IoIosLogIn, IoIosSearch } from "react-icons/io";
+import { useEffect, useState } from "react";
 import HeaderModal from "./HeaderModal";
 import HeaderMenu from "./HeaderMenu";
+import { Link, useNavigate } from "react-router-dom";
+import Modal from "../ui/Modal";
+import Search from "../features/Product/Search";
+import SearchHeader from "../features/Product/SearchHeader";
+import { LuLogOut } from "react-icons/lu";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
+  const [query, setQuery] = useState("");
+  const user = JSON.parse(localStorage.getItem("user")) || {};
+  const navigate=useNavigate()
+
+  const logoutHandler=()=>{
+    localStorage.removeItem("user")
+    navigate("/")
+
+  }
+
   return (
     <div className="grid grid-cols-8 grid-rows-2 md:grid-rows-1  w-full py-4 gap-y-4 border-b-2 ">
-      <div className="flex items-center gap-x-2  col-span-4">
+      <div className="flex items-center gap-x-2  col-span-6">
         <RxHamburgerMenu
           onClick={() => setIsOpen(!isOpen)}
           className="bg-primary-100 w-7 h-7 p-1 rounded-lg block md:hidden cursor-pointer"
         />
         <HeaderModal open={isOpen} onClose={() => setIsOpen(false)} title="">
-          <HeaderMenu className="flex flex-col"  />
+          <HeaderMenu className="flex flex-col" />
         </HeaderModal>
         <span className="text-primary-900 text-sm md:text-xl md:font-bold">
           گیاه لند
@@ -24,26 +40,39 @@ function Header() {
         <HeaderMenu className="md:flex items-center gap-x-2 hidden text-xs lg:text-sm" />
       </div>
 
-      <form className="relative  row-start-2 col-span-4 md:col-span-2 md:row-span-1 md:row-start-1 md:col-start-5">
-        <input
-          type="text"
-          className="bg-primary-100 textField__input"
-          placeholder="جستجو..."
-        />
-        <button className="absolute left-0 top-0 flex items-center h-full ml-3">
-          <IoSearchSharp />
-        </button>
-      </form>
-
-      <div className="flex items-center gap-x-2 col-start-8 flex-row-reverse">
+      <div className="flex items-center gap-x-1 col-start-9 flex-row-reverse">
+        {Object.keys(user).length > 0 ? (
+          <p className="text-sm">سلام {user.name}</p>
+        ) : (
+          <p className="text-sm">کاربر مهمان</p>
+        )}
         <Button className="flex  items-center justify-between w-auto ">
-          <span>
-            <IoIosLogIn />
-          </span>
+          {Object.keys(user).length > 0 ?  (
+            <LuLogOut onClick={logoutHandler} className="text-red-500"/>
+          ) : (
+            <Link to="/login">
+              <IoIosLogIn />
+            </Link>
+          )}
         </Button>
-        <Button>
-          <IoCartOutline />
+        <Link to="/card">
+          <Button>
+            <IoCartOutline />
+          </Button>
+        </Link>
+        <Button
+          onClick={() => setOpenSearch(!openSearch)}
+          className="flex  items-center justify-between w-auto "
+        >
+          <IoSearchSharp />
         </Button>
+        <Modal
+          open={openSearch}
+          onClose={() => setOpenSearch(false)}
+          title={<SearchHeader query={query} setQuery={setQuery} />}
+        >
+          <Search query={query} />
+        </Modal>
       </div>
     </div>
   );

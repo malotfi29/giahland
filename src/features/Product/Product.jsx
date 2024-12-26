@@ -2,25 +2,32 @@ import { useParams } from "react-router-dom";
 import { useFlowers } from "../../context/FlowersProvider";
 import { useEffect } from "react";
 import Button from "../../ui/Button";
+import Loader from "../../ui/Loader"
 import {
   toPersianNumbers,
   toPersianNumbersWithComma,
 } from "../../utils/toPersionNumber";
 import ScrollProducts from "../../ui/ScrollProducts";
+import { useCard } from "../../context/CardReducer";
+import AddToCartBtn from "../../ui/AddToCartBtn";
 
 function Product() {
   const { id } = useParams();
-  const { getFlower, currentFlower, flowers } = useFlowers();
+  const { getFlower, currentFlower, flowers,isLoading } = useFlowers();
+  
+  // const { createCardItem, CardFlowers } = useCard();
+  // const isInCard = CardFlowers.map((f) => f.id).includes(currentFlower.id);
 
   useEffect(() => {
     getFlower(id);
   }, [id]);
+  
 
-  const sililarFlowers = flowers.filter(
+  const similarFlowers = flowers.filter(
     (f) => f.categoryId == currentFlower.categoryId
   );
 
-  if (!currentFlower) return <p>Loading...</p>;
+  if (!currentFlower) return <Loader/>;
   return (
     <div className="flex flex-col">
       <div className="flex flex-col md:flex-row items-center justify-between gap-x-4 mt-8">
@@ -61,15 +68,26 @@ function Product() {
             <span>قیمت:</span>
             <span>{toPersianNumbersWithComma(currentFlower.price)}</span>
           </p>
-          <div className="w-full flex items-center">
-            <Button variant="secondary" className="w-full">
-              افزودن به سبد خرید
-            </Button>
-          </div>
+          <AddToCartBtn currentFlower={currentFlower}/>
+          {/* <div className="w-full flex items-center">
+            {isInCard ? (
+              <p className="badge badge--secondary w-full p-2 text-center">
+                به سبدخرید اضافه شد
+              </p>
+            ) : (
+              <Button
+                variant="secondary"
+                className="w-full"
+                onClick={() => createCardItem(currentFlower)}
+              >
+                افزودن به سبد خرید
+              </Button>
+            )}
+          </div> */}
         </div>
       </div>
       {/* -----similar flowers-------- */}
-      <ScrollProducts title="گیاهان مشابه" products={sililarFlowers} />
+      <ScrollProducts title="گیاهان مشابه" products={similarFlowers} />
     </div>
   );
 }

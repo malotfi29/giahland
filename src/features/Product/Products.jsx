@@ -8,7 +8,7 @@ import { toPersianNumbers } from '../../utils/toPersionNumber'
 import { useFlowers } from '../../context/FlowersProvider'
 
 function Products() {
-    const { isLoading, flowers } = useFlowers();
+    const {flowers } = useFlowers();
   return (
     <div>
       <div className="flex md:flex-row-reverse  flex-col items-center md:items-start justify-between">
@@ -36,6 +36,7 @@ function Products() {
                 </div>
               </Button>
             </div>
+            
             <div className="flex w-full mt-5 items-center justify-between text-sm md:text-base">
               <div className="flex flex-col items-center">
                 <span>{toPersianNumbers(943)}+</span>
