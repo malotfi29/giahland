@@ -9,6 +9,9 @@ An online application for buying flowers, with a dynamic user interface,search b
 
 ## Instalation
 1. Clone the repository
+   ```bash
+   https://github.com/malotfi29/giahland.git
+   ```
 2. Install dependencies 
 ```bash 
 npm install
@@ -18,4 +21,4 @@ npm install
 
 ## Screenshots
 ### Main Page
-! [Main page](./images/screenshot/Mainpage.png)
+! [Main page](./screenshot/Mainpage.png)
