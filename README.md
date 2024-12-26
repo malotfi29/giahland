@@ -21,4 +21,4 @@ npm install
 
 ## Screenshots
 ### Main Page
-! [Main page](./screenshot/Mainpage.png)
+! [Main page](![mainpage](https://github.com/user-attachments/assets/30b623cc-cede-4f6d-b834-e1ffbe6752e2))
