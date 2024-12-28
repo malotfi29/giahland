@@ -5,16 +5,31 @@ import {
 } from "../../utils/toPersionNumber";
 import Button from "../../ui/Button";
 import { useCard } from "../../context/CardReducer";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 function Card() {
-  let user = {};
+  const [user, setUser] = useState({});
   const { CardFlowers } = useCard();
   let tempCardItem = 0;
   const totalPrice = CardFlowers.reduce((acc, curr) => {
     tempCardItem += curr.quantity;
     return acc + curr.quantity * curr.price;
   }, 0);
-  user = JSON.parse(localStorage.getItem("user")) || {};
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const  localUser=await JSON.parse(localStorage.getItem("user")) || {};
+        setUser(localUser);
+      } catch (err) {
+        toast.error(err.message);
+      }
+    }
+    fetchData();
+  }, [user]);
+
+  // user = JSON.parse(localStorage.getItem("user")) || {};
 
   if (Object.keys(user).length === 0)
     return (
@@ -63,7 +78,7 @@ function Card() {
 
 export default Card;
 
-export function SingleCardFlower({ flower,className,children }) {
+export function SingleCardFlower({ flower, className, children }) {
   const { plusQuantity, deleteCardItem } = useCard();
   const handlePlusQuantity = () => {
     plusQuantity(flower);
@@ -78,16 +93,18 @@ export function SingleCardFlower({ flower,className,children }) {
             alt={flower.title}
           />
         </div>
-       <div className=" h-full flex flex-col ">
-       <div className="flex flex-col gap-y-2 mb-4">
-          <p className="font-bold text-sm sm:text-base">{flower.title}</p>
-          <p className="text-xs md:text-sm">فلاورگاردن</p>
-          <p className="text-xs sm:text-sm">قیمت: {flower.price} تومان</p>
+        <div className=" h-full flex flex-col ">
+          <div className="flex flex-col gap-y-2 mb-4">
+            <p className="font-bold text-sm sm:text-base">{flower.title}</p>
+            <p className="text-xs md:text-sm">فلاورگاردن</p>
+            <p className="text-xs sm:text-sm">قیمت: {flower.price} تومان</p>
+          </div>
+          {children}
         </div>
-        {children}
-       </div>
       </div>
-      <div className={`${className} border border-neutral-400 flex items-center justify-between px-2 rounded-md text-xs w-1/3 mr-6 mt-4`}>
+      <div
+        className={`${className} border border-neutral-400 flex items-center justify-between px-2 rounded-md text-xs w-1/3 mr-6 mt-4`}
+      >
         <FaPlus
           className="text-primary-900 cursor-pointer"
           onClick={handlePlusQuantity}

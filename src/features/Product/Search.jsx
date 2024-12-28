@@ -9,7 +9,7 @@ function Search({ query }) {
     searchFlower(query);
   }, [query]);
 
-  console.log(searchResult);
+ 
 
   if (!searchResult) return <p>...</p>;
 

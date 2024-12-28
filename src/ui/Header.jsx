@@ -10,14 +10,27 @@ import Modal from "../ui/Modal";
 import Search from "../features/Product/Search";
 import SearchHeader from "../features/Product/SearchHeader";
 import { LuLogOut } from "react-icons/lu";
+import toast from "react-hot-toast";
 
 function Header() {
+  const [user, setUser] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
   const [query, setQuery] = useState("");
-  const user = JSON.parse(localStorage.getItem("user")) || {};
+
   const navigate=useNavigate()
 
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const localUser =await JSON.parse(localStorage.getItem("user")) || {};
+        setUser(localUser);
+      } catch (err) {
+        toast.error(err.message);
+      }
+    }
+    fetchData();
+  }, [user]);
   const logoutHandler=()=>{
     localStorage.removeItem("user")
     navigate("/")
