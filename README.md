@@ -1,5 +1,6 @@
 # Giahland
-An online application for buying flowers, with a dynamic user interface,search box and a shopping cart
+An online application created with react and tailwind for buying flowers, with a dynamic user interface,search box and a shopping cart
+
 
 ## Features
 - Search for flower using flower name
