@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 
 const FlowerContext = createContext();
-const BASE_URL = "https://giahland.onrender.com";
+const BASE_URL = "http://localhost:5000/flowers";
 
 function FlowersProvider({ children }) {
   const { isLoading, data: flowers } = useFetch(BASE_URL);
